@@ -1,0 +1,41 @@
+body{
+    background-color: brown;
+    padding: 0;
+    margin: 0px;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size:200px ;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style:oblique;
+    font-display: block;
+    text-shadow: 1px 3px blue;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+}
+span{
+    color:blue; size: 30px;
+
+}
+#para{
+    text-align: left;
+    color:aqua;
+    display: inline;
+    
+}
+div{
+    color: rgb(10, 241, 83);
+}
+/* ul{
+    list-style: none;
+}
+ul li{
+    float: left; margin: 30px;
+} */
+

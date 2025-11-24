@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:flex</title>
+    <style>
+        main{
+            width: 900px;height:800px;
+            background-color: antiquewhite;margin: 0 auto;
+            border-left: 2px solid #000;
+            border-right:2px sold #000 ;
+            box-shadow: 1px 2px 2px red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* align-items: last baseline; */
+            flex-direction: row-reverse;
+
+        }
+        .box{
+             width: 200px;height:300px;
+             margin: 0px 5px;
+             background-color: #cd2;
+             /* flex-grow: 1; */
+             gap: 100px;
+             
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+    </main>
+    
+</body>
+</html>
