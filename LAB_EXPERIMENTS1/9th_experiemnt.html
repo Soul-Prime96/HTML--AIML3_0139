@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- THIS LINE IS IMPORTANT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Grid</title>
+
+    <style>
+
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* GRID CONTAINER */
+        .grid-container {
+            display: grid;                     /* turns div into grid */
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 20px;                         /* space between cards */
+            width: 100%;
+        }
+
+        /* PRODUCT CARD */
+        .card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* TABLET VIEW */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* MOBILE VIEW */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Responsive Product Grid</h2>
+
+    <div class="grid-container">
+
+        <div class="card">
+            <h3>Product 1</h3>
+            <p>High quality product.</p>
+            <p>₹499</p>
+        </div>
+
+        <div class="card">
+            <h3>Product 2</h3>
+            <p>Durable and stylish.</p>
+            <p>₹799</p>
+        </div>
+
+        <div class="card">
+            <h3>Product 3</h3>
+            <p>Lightweight and comfy.</p>
+            <p>₹1299</p>
+        </div>
+
+        <div class="card">
+            <h3>Product 4</h3>
+            <p>Premium quality design.</p>
+            <p>₹999</p>
