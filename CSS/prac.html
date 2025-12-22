@@ -21,9 +21,11 @@
         #hdr_top,#hdr,#container,#ftr{
             background-color: aqua;
             height: 150px;
+            text-align:center;
+
         }
         #container{
-            height: 400px;
+            height: 500px;
             display: flex;
             gap: 5px;
             text-align: center;
@@ -31,7 +33,7 @@
             line-height: 400px;
         }
         #hdr_top{
-            height: 150px;
+            height: 200px;
             display: flex;
             flex-direction: row;
             gap: 5px;
@@ -49,13 +51,28 @@
         }
         #centre{
             flex-grow: 2;
-            background-color: aquamarine;
+            /* background-color: aquamarine; */
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 20px;
+            gap: 5px;
 
         }
         #left,#right{
             flex-grow: 1;
             background-color: blue;
+            
 
+        }
+        #central_top,#central_bottom{
+            flex-grow: 1;
+            background-color: crimson;
+
+        }
+        #central_mid{
+            flex-grow: 2;
+            background-color: chartreuse;
         }
        
 
@@ -80,7 +97,15 @@
             <h2>Left</h2>
         </div>
         <div id="centre">
-            <h2>Centre</h2>
+            <div id="central_top">
+                <h2>Central Top</h2>
+            </div>>
+            <div id="central_mid">
+                <h2>Central Mid Section</h2>
+            </div>
+            <div id="central_bottom">
+                <h2>Central Bottom</h2>
+            </div>
         </div>
         <div id="right">
             <h2>Right</h2>
